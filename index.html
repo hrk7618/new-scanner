@@ -8,7 +8,7 @@
         async function sendRFIDTag() {
             const rfidTag = document.getElementById('rfidTag').value;
             if (rfidTag) {
-                const response = await fetch('http://<ESP32_IP>/saveRFID', {
+                const response = await fetch('http://192.168.137.6/saveRFID', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
